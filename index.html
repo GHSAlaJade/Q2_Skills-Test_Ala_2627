@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBMC Enroll Now</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="c:\Users\USER\Desktop\ICT 26-27\Q2 Skills Test\style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGWMliic2yX4A8KaM5AP99wxYDDubpMTUsDhyHWKdYmoUUNZZYomypEc&s=10" alt="OBMC Logo" width="32" height="32" class="me-2 rounded-circle bg-white p-1">
+                <span>Enroll Now</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#enrollment-form">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact Us</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="hero-wrapper py-5">
+        <div class="container">
+            
+            <div class="text-center text-white header-banner mb-4">
+                <div class="d-inline-flex align-items-center justify-content-center mb-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGWMliic2yX4A8KaM5AP99wxYDDubpMTUsDhyHWKdYmoUUNZZYomypEc&s=10" alt="OBMC Emblem" width="52" height="52" class="me-3 rounded-circle bg-white p-1 shadow">
+                    <h1 class="display-6 fw-bold mb-0">OBMC Student Enrollment Form</h1>
+                </div>
+                <p class="lead fs-6 mt-2">Fill out the form below to enroll for the upcoming school year.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-md-11">
+                    <div id="enrollment-form" class="card form-glass bg-light bg-opacity-75 shadow border-0 rounded-4 p-4 p-md-5 mt-4">
+                        <form action="#" method="POST">
+                            
+                            <h2 class="h4 fw-bold text-primary-dark border-bottom pb-2 mb-3">Student Information</h2>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label fw-medium">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="First" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label fw-medium">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last" required>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mt-1">
+                                <div class="col-md-4">
+                                    <label for="birthDate" class="form-label fw-medium">Birth Date</label>
+                                    <input type="date" class="form-control" id="birthDate" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="gender" class="form-label fw-medium">Gender</label>
+                                    <select class="form-select form-control" id="gender" required>
+                                        <option value="" selected disabled>Select...</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Prefer not to say">Prefer not to say</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="gradeLevel" class="form-label fw-medium">Grade Level</label>
+                                    <select class="form-select form-control" id="gradeLevel" required>
+                                        <option value="" selected disabled>Select...</option>
+                                        <option value="Junior Casa">Junior Casa</option>
+                                        <option value="Junior Advance Casa">Junior Advance Casa</option>
+                                        <option value="Advance Casa">Advance Casa</option>
+                                        <option value="Grade 1">Grade 1</option>
+                                        <option value="Grade 2">Grade 2</option>
+                                        <option value="Grade 3">Grade 3</option>
+                                        <option value="Grade 4">Grade 4</option>
+                                        <option value="Grade 5">Grade 5</option>
+                                        <option value="Grade 6">Grade 6</option>
+                                        <option value="Grade 7">Grade 7</option>
+                                        <option value="Grade 8">Grade 8</option>
+                                        <option value="Grade 9">Grade 9</option>
+                                        <option value="Grade 10">Grade 10</option>
+                                        <option value="Grade 11">Grade 11</option>
+                                        <option value="Grade 12">Grade 12</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <h2 id="contact-section" class="h4 fw-bold text-primary-dark border-bottom pb-2 mt-4 mb-3">Contact Details</h2>
+                            
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="emailAddress" class="form-label fw-medium">Email Address</label>
+                                    <input type="email" class="form-control" id="emailAddress" placeholder="student@example.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactNumber" class="form-label fw-medium">Contact Number</label>
+                                    <input type="tel" class="form-control" id="contactNumber" placeholder="0912-345-6789" required>
+                                </div>
+                            </div>
+
+                            <h2 class="h4 fw-bold text-primary-dark border-bottom pb-2 mt-4 mb-3">Other Information</h2>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-medium d-block">Mode of Learning</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="learningMode" id="modeOnline" value="Online" required>
+                                    <label class="form-check-label" for="modeOnline">Online</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="learningMode" id="modeF2F" value="Face-to-Face" checked>
+                                    <label class="form-check-label" for="modeF2F">Face-to-Face</label>
+                                </div>
+                            </div>
+
+                            <div class="form-check mt-4">
+                                <input class="form-check-input" type="checkbox" id="confirmCheck" required>
+                                <label class="form-check-label" for="confirmCheck">
+                                    I confirm that the information provided is true and complete.
+                                </label>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg px-5 shadow-sm fw-semibold">
+                                    Submit Enrollment
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer-bar text-black text-center py-3 mt-auto shadow-lg">
+        <div class="container">
+            <p class="mb-1 fw-bold">OBMC Enrollment</p>
+            <p class="mb-1 small">Thank you for choosing OBMC!</p>
+            <small class="opacity-75">&copy; 2026 OB Montessori Center | Salve Ala - 9-Jade</small>
+        </div>
+    </footer>
+
+</body>
+</html>

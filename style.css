@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: 
+        linear-gradient(rgba(13, 35, 68, 0.35), rgba(13, 35, 68, 0.45)),
+        url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/c3e3107c-2129-4be5-bd37-d742a6706727/OB+BG+-+AY+2025+VER+2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.hero-wrapper {
+    flex: 1;
+}
+
+.header-banner h1,
+.header-banner p {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+.form-glass {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.86) !important;
+}
+
+.text-primary-dark {
+    color: #0b3c78;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    padding: 0.6rem 0.85rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 0.5rem;
+    transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-1px);
+}
+
+.footer-bar {
+    background-color: rgba(11, 60, 120, 0.92);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    letter-spacing: 0.3px;
+}
